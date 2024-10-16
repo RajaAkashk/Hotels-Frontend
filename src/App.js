@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HotelsByName from "./components/HotelsByName";
+import Hotels from "./components/Hotels";
+import AddNewHotel from "./components/AddNewHotel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AddNewHotel />
+      <Hotels />
+      <HotelsByName nameOfHotel={"Sunset Resort"} />
     </div>
   );
 }
